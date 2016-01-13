@@ -8,7 +8,6 @@ class NavigationMenu extends React.Component {
 
   render () {
    
-   console.log(this.props)
     const links =  this.props.links.map(function(link, i){
 	let className = (this.props.pageLink === link.href)?"active":""  
           return <li key={i} className={className}><Link {...link}/></li>;

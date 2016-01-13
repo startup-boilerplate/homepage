@@ -39,7 +39,8 @@
     "webpack-dev-server": "^1.14.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "webpack && rm ./public/server.js"
   },
   "keywords": [
     "react",
