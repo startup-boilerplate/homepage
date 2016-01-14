@@ -1,0 +1,11 @@
+html:
+  build: .
+  volumes:
+   - .:/var/www
+
+server:
+  build: ./server
+  volumes_from: 
+   - html
+  ports:
+   - 80:80

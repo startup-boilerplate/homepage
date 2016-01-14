@@ -10,9 +10,9 @@ class Home extends React.Component {
     return (
 <html lang="en">
 <head>
-  <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template</title>
+  <title>Startup Boilerplate Template</title>
   <link href="/client.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
