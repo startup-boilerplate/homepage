@@ -1,12 +1,9 @@
-"use strict";
-
 import React from 'react';
 import Nav from '../component/nav.jsx';
 
 class Home extends React.Component {
 
-  render () {
-
+  render() {
     return (
 <html lang="en">
 <head>
@@ -116,7 +113,6 @@ class Home extends React.Component {
 </html>
 );
   }
-
 }
 
 export default Home;

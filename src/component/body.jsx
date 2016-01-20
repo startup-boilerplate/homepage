@@ -3,11 +3,15 @@ import Nav from './nav.jsx';
 
 class Body extends React.Component {
 
-  rawMarkup () {
+  static propTypes = {
+    content: React.PropTypes.string.isRequired,
+  }
+
+  rawMarkup() {
     return { __html: this.props.content };
   }
 
-  render () {
+  render() {
     return (
      <body>
       <Nav pageLink="/about" />
@@ -17,7 +21,7 @@ class Body extends React.Component {
           </div>
       </div>
       <script src="/client.js"></script>
-    </body>)
+    </body>);
   }
 }
 

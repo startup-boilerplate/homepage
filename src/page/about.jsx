@@ -1,19 +1,16 @@
-"use strict";
-
 import React from 'react';
-import AboutContent from './md/about.md'
-import Head from '../component/head.jsx'
-import Body from '../component/body.jsx'
+import AboutContent from './md/about.md';
+import Head from '../component/head.jsx';
+import Body from '../component/body.jsx';
 
-const About = React.createClass({
+class About extends React.Component {
   render() {
-     
-   let head = AboutContent.meta.head; 
+    const head = AboutContent.meta.head;
     return (<html>
     <Head {...head}/>
-    <Body content={AboutContent.html} />
-    </html>)
+    <Body content={ AboutContent.html } />
+    </html>);
   }
-})
+}
 
 export default About;
