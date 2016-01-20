@@ -1,1 +1,1 @@
-module.exports = [{name:"About",href: "/about"}];
+module.exports = [{ name: 'About', href: '/about' }];

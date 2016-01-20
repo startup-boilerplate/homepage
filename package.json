@@ -27,7 +27,10 @@
     "yaml-markdown-loader": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "^2.3.4",
+    "babel-eslint": "^5.0.0-beta6",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.1.0",
+    "eslint-plugin-react": "^3.15.0",
     "expect": "^1.13.4",
     "karma": "^0.13.19",
     "karma-mocha": "^0.2.1",
@@ -35,12 +38,14 @@
     "karma-sourcemap-loader": "^0.3.6",
     "karma-webpack": "^1.7.0",
     "materialize-sass-origin": "^0.97.5",
+    "mocha": "^2.3.4",
     "phantomjs": "^1.9.19",
     "webpack-dev-server": "^1.14.0"
   },
   "scripts": {
     "test": "mocha",
-    "build": "webpack && rm ./public/server.js"
+    "build": "webpack && rm ./public/server.js",
+    "run": "webpack-dev-server --host 0.0.0.0 --content-base=./public"
   },
   "keywords": [
     "react",
