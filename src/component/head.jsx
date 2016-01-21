@@ -4,7 +4,7 @@ class Head extends React.Component {
 
   static propTypes = {
     title: React.PropTypes.string.isRequired,
-  }
+  };
 
   render() {
     return (<head>

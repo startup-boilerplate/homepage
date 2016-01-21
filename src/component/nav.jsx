@@ -7,7 +7,7 @@ class Nav extends React.Component {
 
   static propTypes = {
     pageLink: React.PropTypes.string,
-  }
+  };
 
   render() {
     return (

@@ -5,7 +5,7 @@ class Body extends React.Component {
 
   static propTypes = {
     content: React.PropTypes.string.isRequired,
-  }
+  };
 
   rawMarkup() {
     return { __html: this.props.content };

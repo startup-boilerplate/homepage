@@ -9,7 +9,7 @@ class NavigationMenu extends React.Component {
     pageLink: React.PropTypes.string,
     className: React.PropTypes.string.isRequired,
     id: React.PropTypes.string,
-  }
+  };
 
   render() {
     const links = this.props.links.map((link, i) => {

@@ -8,7 +8,7 @@ class NavigationMenuButton extends React.Component {
     id: React.PropTypes.string.isRequired,
     className: React.PropTypes.string.isRequired,
     links: React.PropTypes.array.isRequired,
-  }
+  };
 
   componentDidMount() {
     ReactDom.findDOMNode(this.refs.navmobile).style.left = '-250px';
