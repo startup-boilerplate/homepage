@@ -34,7 +34,7 @@ Of course you can also just simply run ```npm install``` and use webpack-dev-ser
 
 The general idea is solved with 2 npm packages:
  - [static-html-webpack-plugin](https://www.npmjs.com/package/static-html-webpack-plugin) it takes *react-router* routes and creates an html based on it.
- - [yaml-markdown-loader](https://www.npmjs.com/package/yaml-markdown-loader), it provides kinda Jekyll format for creating pages. You provide all meta that you need in a header, and content in a body of a .md file.
+ - [yaml-markdown-loader](https://www.npmjs.com/package/yaml-markdown-loader), it provides kinda Jekyll format for creating pages. You provide all meta, that you need in a header and content in a body. And all that in the same .md file.
 
 and builds a html tree along with all .js, .css, ... like this:
 ```
@@ -49,7 +49,7 @@ and builds a html tree along with all .js, .css, ... like this:
 ```
 
 
- ### TODO
+### TODO
 
   demo is an absolutely alpha.
   - it needs test
