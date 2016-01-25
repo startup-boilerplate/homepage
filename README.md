@@ -27,7 +27,7 @@ it will take sometime. Ok, what it does, it builds 2 container:
 - the first is a nodejs one, it takes repository code and builds html based on it and put in ```/var/www/public```
 - the second is a web-server(nginx). it simply mounts ```/var/www/public``` folder from the first container and serve it to the outside wolrd.
 
-Of course you can also just simply run ```npm install``` and use webpack-dev-server locally, but it not the idea behind that demo, which is to provide isolated environment that is as identical to production as possible.
+Of course you can also just simply run ```npm install``` and use webpack-dev-server localy, but it not the idea behind that demo, which is to provide isolated environment, that is as identical to production as possible.
 
 
 ### React part
@@ -54,4 +54,4 @@ and builds a html tree along with all .js, .css, ... like this:
   demo is an absolutely alpha.
   - it needs test
   - it needs environment awareness
-  - and many many more... your really welcome to contribute ;)
+  - and many many more... you are really welcome to contribute ;)
