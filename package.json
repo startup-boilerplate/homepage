@@ -6,6 +6,10 @@
   "directories": {
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/startup-boilerplate/homepage.git"
+  },
   "dependencies": {
     "babel-core": "^6.3.26",
     "babel-loader": "^6.2.1",

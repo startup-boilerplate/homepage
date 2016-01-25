@@ -1,6 +1,8 @@
 const StaticHtml = require('static-html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
+const webpack = require('webpack');
+
 
 module.exports = {
   entry: {
@@ -14,8 +16,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.jsx?$/,  include: [ path.resolve(__dirname, "src") ], loader:'babel'},
-      {test: /\.scss$/,  include: [ path.resolve(__dirname, "src/style") ], loader:ExtractTextPlugin.extract('css!sass')},
+      {test: /\.jsx?$/,  loader:'babel'},
+      {test: /\.scss$/,  loader:ExtractTextPlugin.extract('css!sass')},
       {test: /\.md$/, loader: 'yaml-markdown'},
       {
         test: /\.(woff)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -39,5 +41,7 @@ module.exports = {
   watchOptions: {
     poll: true
   },
-  plugins: [new StaticHtml(), new ExtractTextPlugin('client.css')]
+  plugins: [new StaticHtml(),
+            new ExtractTextPlugin('client.css')
+          ]
 }
