@@ -8,4 +8,4 @@ server:
   volumes_from: 
    - html
   ports:
-   - 80:80
+   - $VM_IP:80:80
