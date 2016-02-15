@@ -1,7 +1,11 @@
-html:
+html_onbuild:
   build: .
   volumes:
    - .:/var/www
+
+html:
+  build: . 
+  dockerfile: Dockerfile.final
 
 server:
   build: ./server

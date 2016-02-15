@@ -1,0 +1,3 @@
+FROM homepage_html_onbuild
+
+CMD npm install && npm run build

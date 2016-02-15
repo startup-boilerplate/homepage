@@ -24,8 +24,7 @@ RUN . ~/.nvm/nvm.sh && nvm install $NODEJS_VER && nvm alias default $NODEJS_VER
 ENV PATH=/home/dev/.nvm/versions/node/v$NODEJS_VER/bin:$PATH
 WORKDIR $APP_DIR
 
+ONBUILD ADD . $APP_DIR
 RUN sudo chown -R $USER:$USER . && rm -fr public && mkdir public
-
 VOLUME $APP_DIR/public
 
-CMD npm install && npm run build
