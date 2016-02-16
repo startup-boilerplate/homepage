@@ -1,3 +1,9 @@
+build:
+  server:
+    image: startupboilerplate/homepage-server
+  html:
+    image: startupboilerplate/homepage
+
 compose:
   startupboilerplate/homepage-server:
     volumes_from: 
