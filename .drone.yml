@@ -3,9 +3,9 @@ build:
     image: startupboilerplate/homepage-server
   html:
     image: startupboilerplate/homepage
+    pull: true
     commands:
       - env
       - sudo /home/dev/.nvm/versions/node/v$NODEJS_VER/bin/npm cache clean
       - npm install
-      - npm test
 
