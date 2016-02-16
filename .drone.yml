@@ -1,12 +1,6 @@
 compose:
-  homepage_html:
-    build: .
-    volumes:
-     - .:/var/www
-
-  homepage_server:
-    build: ./server
+  startupboilerplate/homepage-server:
     volumes_from: 
-     - homepage_html
+     - startupboilerplate/homepage 
     ports:
     - 80:80

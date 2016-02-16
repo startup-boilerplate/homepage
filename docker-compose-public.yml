@@ -1,0 +1,10 @@
+
+html:
+  image: startupboilerplate/homepage 
+
+server:
+  image: startupboilerplate/homepage-server
+  volumes_from: 
+   - html
+  ports:
+   - $VM_IP:80:80
