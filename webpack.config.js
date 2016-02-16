@@ -42,6 +42,5 @@ module.exports = {
     poll: true
   },
   plugins: [new StaticHtml(),
-            new ExtractTextPlugin('client.css')
-          ]
+            new ExtractTextPlugin('client.css')]
 }
