@@ -3,10 +3,7 @@ build:
     image: startupboilerplate/homepage-server
   html:
     image: startupboilerplate/homepage
+    commands:
+      - npm install
+      - npm test
 
-compose:
-  startupboilerplate/homepage-server:
-    volumes_from: 
-     - startupboilerplate/homepage 
-    ports:
-    - 80:80
