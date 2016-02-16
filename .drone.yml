@@ -4,6 +4,7 @@ build:
   html:
     image: startupboilerplate/homepage
     commands:
+      - npm cache clean
       - npm install
       - npm test
 
