@@ -1,0 +1,12 @@
+compose:
+  homepage_html:
+    build: .
+    volumes:
+     - .:/var/www
+
+  homepage_server:
+    build: ./server
+    volumes_from: 
+     - homepage_html
+    ports:
+    - 80:80
