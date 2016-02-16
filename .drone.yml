@@ -5,8 +5,6 @@ build:
     image: startupboilerplate/homepage
     pull: true
     commands:
-      - env
-      - sudo chmod -R +x . && sudo chmod -R +rwx /home/dev
       - npm cache clean
       - npm install
 
