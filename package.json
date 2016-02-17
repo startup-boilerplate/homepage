@@ -50,7 +50,7 @@
   "scripts": {
     "test": "karma start --log-level debug --single-run",
     "build": "webpack && rm ./public/server.js",
-    "run": "webpack-dev-server --host 0.0.0.0 --content-base=./public"
+    "dev-server": "webpack-dev-server --host 0.0.0.0 --content-base=./public"
   },
   "keywords": [
     "react",

@@ -27,10 +27,11 @@ $ docker-compose up -d
 ```
 it will take sometime. Ok, what it does, it builds 2 container:
 - the first is a nodejs one, it takes repository code and builds html based on it and put in ```/var/www/public```
-- the second is a web-server(nginx). it simply mounts ```/var/www/public``` folder from the first container and serve it to the outside wolrd.
+- the second is a web-server(nginx). it simply mounts ```/var/www/public``` folder from the first container and serve it to the outside world.
 
-Of course you can also just simply run ```npm install``` and use webpack-dev-server localy, but it not the idea behind that demo, which is to provide isolated environment, that is as identical to production as possible.
+Of course you can also just simply run ```npm install``` and use webpack-dev-server locally, but it not the idea behind that demo, which is to provide isolated environment, that is as identical to production as possible.
 
+To get it in browser, open an IP of your *default* VM, you can check it by ```docker-machine ip default```.
 
 ### React part
 
@@ -50,9 +51,20 @@ and builds a html tree along with all .js, .css, ... like this:
 |    |--- ...
 ```
 
+### Development mode
 
-
-
+After you bootstrapped startboilerplate setup by ```docker-compose up -d```
+you have to have an image **homepage_html_onbuild** build in your VM, that is the one the you need for working. All you need now, is just to map your application code to ```/var/www``` on image side and start working.
+here is an example command:
+```
+$ docker run --rm -ti -p 8080:8080 -v $PWD:/var/www homepage_html_onbuild /bin/bash
+```
+and then start webpack-dev-server
+ ```
+$ npm run dev-server
+```
+to get the dev page to see, open <default_vm_ip>:8080 in your browser.
+ 
 ### TODO
 
   demo is an absolutely alpha.
