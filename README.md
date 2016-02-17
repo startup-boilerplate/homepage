@@ -2,7 +2,7 @@
 
 # Material Design React based demo homepage.
 
-This project is a proof of concept of static React application and usage of principles of Googles Material Design, in realisation of materializecss.com guys.
+This project is a proof of concept of static React application templated by Googles Material Design and running on Docker.
 
 ### How to start
 
@@ -49,6 +49,8 @@ and builds a html tree along with all .js, .css, ... like this:
 |    |--- client.css
 |    |--- ...
 ```
+
+
 
 
 ### TODO
