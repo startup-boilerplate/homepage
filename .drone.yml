@@ -7,4 +7,5 @@ build:
     commands:
       - npm cache clean
       - npm install
+      - npm test
 

@@ -1,3 +1,5 @@
+[![Build Status](http://ci.startupboilerplate.com/api/badges/startup-boilerplate/homepage/status.svg)](http://ci.startupboilerplate.com/startup-boilerplate/homepage)
+
 # Material Design React based demo homepage.
 
 This project is a proof of concept of static React application and usage of principles of Googles Material Design, in realisation of materializecss.com guys.
