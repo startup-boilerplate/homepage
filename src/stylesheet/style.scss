@@ -1,4 +1,15 @@
 $icons-font-path:  "~materialize-sass-origin/font/material-design-icons/";
 $roboto-font-path: "~materialize-sass-origin/font/roboto/";
 
+$navbar-font-color: #000;
+nav {
+  @extend .z-depth-0;
+}
+
+.mdi-hardware-device-hub:before {
+    content: "&#xE335";
+}
+
+
 @import "~materialize-sass-origin/sass/materialize.scss";
+$secondary-color: color("cyan", "base");
