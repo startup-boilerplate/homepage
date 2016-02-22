@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../component/nav.jsx';
+import GitHub from '../component/github-forkme.jsx';
 
 class Home extends React.Component {
 
@@ -13,6 +14,7 @@ class Home extends React.Component {
   <link href="/client.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <GitHub />
   <Nav />
   <div className="section no-pad-bot" id="index-banner">
     <div className="container">
