@@ -13,7 +13,7 @@ class Nav extends React.Component {
     return (
    <nav className="transparent black-text" role="navigation">
     <div className="nav-wrapper container">
-      <a id="logo-container" href="/" className="brand-logo">Sartup<b>Boilerplate</b></a>
+      <a id="logo-container" href="/" className="brand-logo">Startup<b>Boilerplate</b></a>
       <NavigationMenu pageLink={this.props.pageLink}
         className="right hide-on-med-and-down"
         links={links}

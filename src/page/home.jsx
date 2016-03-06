@@ -18,7 +18,7 @@ class Home extends React.Component {
   <Nav />
   <div className="section no-pad-bot" id="index-banner">
     <div className="container">
-      <h1 className="header center black-text"><span className="thin">Bootstrap your</span> <span className="bold">Startup</span><span className="thin"> infrastructure in a fastes possible way</span></h1>
+      <h1 className="header center black-text"><span className="thin">Bootstrap your</span> <span className="bold">Startup</span><span className="thin"> infrastructure in the fastest possible way</span></h1>
     </div>
   </div>
 
