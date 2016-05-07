@@ -3,6 +3,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
+var external_pages = '^' + path.resolve('./src').replace(/\//g, '\\/') + '$';
+
 module.exports = {
   entry: {
     server: __dirname + '/src/server.js',
@@ -41,5 +43,7 @@ module.exports = {
     poll: true
   },
   plugins: [new StaticHtml(),
-            new ExtractTextPlugin('client.css')]
+            new ExtractTextPlugin('client.css'),
+            new webpack.ContextReplacementPlugin(new RegExp(external_pages), path.resolve('./static-pages'), true, /^\.\/.*Index\.html$/),
+          ]
 }

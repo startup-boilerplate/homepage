@@ -1,11 +1,10 @@
-import Home from './page/home.jsx';
-import About from './page/about.jsx';
+import Pages from './Pages'
 
 module.exports = [
   { path: '/',
-    component: Home,
+    component: Pages,
   },
-  { path: '/about',
-    component: About,
-  },
+  { path: '/landings',
+    component: Pages
+  }
 ];

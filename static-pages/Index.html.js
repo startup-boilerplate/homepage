@@ -1,8 +1,14 @@
 import React from 'react';
-import Nav from '../component/nav.jsx';
-import GitHub from '../component/github-forkme.jsx';
 
-class Home extends React.Component {
+
+const GitHubFork = () => (<a href="https://github.com/startup-boilerplate/homepage">
+           <img style={{position: "absolute", top: 0, right: 0, border: 0, }}
+                src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+                alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"/>
+          </a>)
+
+
+export default class Index extends React.Component {
 
   render() {
     return (
@@ -14,8 +20,8 @@ class Home extends React.Component {
   <link href="/client.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <GitHub />
-  <Nav />
+  <GitHubFork />
+
   <div className="section no-pad-bot" id="index-banner">
     <div className="container">
       <h1 className="header center black-text"><span className="thin">Bootstrap your</span> <span className="bold">Startup</span><span className="thin"> infrastructure in the fastest possible way</span></h1>
@@ -67,5 +73,3 @@ class Home extends React.Component {
 );
   }
 }
-
-export default Home;
